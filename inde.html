@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bbc.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+    <div id="preloadScreen">
+        <video id="preloadVideo" autoplay muted>
+            <source src="black-pre.mp4" type="video/mp4">
+        
+        </video>
+    </div>
+    <nav>
+    <div class="main-content">
+           <div><button class="open-btn" onclick="opensidebar()">=</button>
+            </div>
+           <div class="bbc"><img src="image/bbc logo.jpg" alt=""></div>
+           <div class="btns"><button class="dark-btn"  onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Register</button>
+           <button class="white-btn"  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In</button></div>   
+    </div>
+    <div id="id01" class="modal">
+        <div class="div"><span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span></div>
+        <form class="modal-content" action="/action_page.php">
+          <div class="container">
+          <div class="modal-img">
+            <div class="div1">
+                <br><br><br>
+                <img src="image/bbc white.png" class="img1" alt="" ><br><br><br>
+            <h1 class="center">Sign into your BBC account</h1><br><br>
+            <h3 class="center">Enter your email</h3><br><br>
+            
+            <input type="text" placeholder="Email" name="email"  required class="email" ><br><br>
+                         
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Continue</button><br><br>
+  
+                <h5><a href="oo.html">I have forgotten my email</a></h5><br>
+                <h5><a href="help.html">More help signing in</a><br><br></h5>
+                <hr><br>
+                <h3 class="center">Donot have a BBC account?</h3><br>
+                <h5 class="center"><a onclick="document.getElementById('id02').style.display='block'" style="width:auto;"  >Register now</a></h5>
+              </div>
+            </div>
+            <div class="div2"><img  src="image/sign.jpg"  class="img " alt="" margin-bottom="30px"></div>
+            
+            
+          </div>
+      
+            
+          </div>
+        </form>
+      </div> 
+      
+      <div id="id02" class="modal1">
+        <div class="div"><span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal1">&times;</span></div>
+        <form class="modal-content" action="/action_page.php">
+          <div class="container">
+          <div class="modal-img">
+            <div class="div1">
+                <br><br><br>
+                <img src="image/bbc white.png" class="img1" alt="" ><br><br><br>
+            <h1 class="center">Sign into your BBC account</h1><br><br>
+            <h3 class="center">Enter your email</h3><br><br>
+            
+            <input type="text" placeholder="Email" name="email"  required class="email" ><br><br>
+                         
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Continue</button><br><br>
+  
+               
+                <h5 >Already have a BBC account?<a   onclick="document.getElementById('id01').style.display='block'" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" onclick="document.getElementById('id02').style.display='none'" >Sign in now</a></h5>
+              </div>
+            </div>
+            <div class="div2"><img  src="image/sign.jpg"  class="img " alt="" margin-bottom="30px"></div>
+            
+            
+          </div>
+      
+            
+          </div>
+        </form>
+      </div>  
+
+
+   
+    <div class="box">
+        <div class="nav">
+            <header >   
+              <a  class="line"  class="tablink"  data-id="Home"   onclick="openPage('Home')" id="defaultOpen">Home</a>
+              <a >News</a>
+              <a >Sport</a>
+              <a      class="tablink" data-id="Bussiness" onclick="openPage('Bussiness')" >Bussiness</a>
+              <a href="Inovation" >Inovation</a>
+              <a href="Culture" >Culture</a>
+              <a href="Arts" >Arts</a>
+              <a href="Travle" >Travle</a>
+              <a href="Earth" >Earth</a>
+              <a href="Video" >Video</a>
+              <a href="Live">live</a>
+            </header>
+        </div>   
+    </nav>
+            <div id="sidebar" class="sidebar">
+                <button class="close-btn" onclick="closesidebar()">&times;</button>
+               
+                <div class="box2">
+                <div><input type="text" class="search" placeholder="Search news, topics and more"></div>
+                    <div class="search-btn"><i class="fa fa-search"></i></div>
+                </div>
+               <div class="content">
+                
+                <a class="tablink" onclick="openPage('Home')" id="defaultOpen">Home</a>
+                <a herf="news">News</a>
+                <a href="sport">Sport</a>
+                <a  class="tablink" onclick="openPage('Bussiness')" >Business</a>
+                <a href="innovation">Innovation</a>
+                <a herf="culture">Culture</a>
+                <a href="arts">Arts</a>
+                <a href="travel">Travel</a>
+                <a href="earth">Earth</a>
+                <a href="video">Video</a>
+                <a href="live">Live</a>
+                <a href="audio">Audio</a>
+                <a href="weather">Weather</a>
+                <a href="newsletters">Newsletters</a>
+                
+                </div>
+            </div>
+    </div>
+    </div>
+<div    id="Home" class="tabcontent">
+<section class="sec1">
+<div class="bag1">
+    <div class="left">
+    <div>
+        <img src="image/2.png" alt=""><br><br>
+        <h4>What executive orders has trump signed after taking office?</h4><br>
+        <p>The Republicain quickly set about using his new powers to approve executive actions on a host of policy priorities.</p><br>
+        <span class="last">2 days ago<hr class="rotate"> US & Canada</span><br><br>
+        <hr> 
+    </div>
+
+    <div>
+        <img src="image/3.png" alt=""><br><br>
+        <h4>What executive orders has trump signed after taking office?</h4><br>
+        <p>The Republicain quickly set about using his new powers to approve executive actions on a host of policy priorities.</p><br>
+        <span class="last">2 days ago <hr class="rotate">US & Canada</span><br><br>
+        <hr>
+    </div>
+    </div>
+    <div class="middle">
+        <img src="image/1.png" alt=""><br><br>
+        <h1><span class="dot"></span><span class="live"> Live</span>What executive orders has trump signed after taking office?</h1><br>
+        <p>The Republicain quickly set about using his new powers to approve executive actions on a host of policy priorities.</p><br>
+    </div>
+    <div class="right">
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cum voluptate adipisci magni quidem totam nulla, rerum ullam aut voluptatum quisquam illum corrupti repudiandae mollitia praesentium officiis sed unde quos.</p><br>
+            <span class="last">2 days ago<hr class="rotate"> US & Canada</span><br><br><hr></div>
+        <div><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sequi repudiandae maiores aperiam delectus dolore voluptas, inventore laborum recusandae laudantium natus impedit perspiciatis accusamus, temporibus dolorum. Iure optio omnis ut.</p><br>
+            <span class="last">2 days ago<hr class="rotate"> US & Canada</span><br><br><hr></div>
+        <div><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae illo provident numquam architecto harum id maiores tempore, autem ea culpa corporis, odit alias, sit at. Autem a perspiciatis expedita provident.</p><br>
+            <span class="last">2 days ago<hr class="rotate"> US & Canada</span><br><br><hr></div>
+    </div>
+    
+</div><br><br><br>
+    <hr height="3px" color="black">
+    <h1> Only from the BBC</h1>
+    
+        <div class="left1">
+            <div>
+                <img src="image/4.png" alt=""><br><br>
+                <h2>The man who revealed Auschwitz's atrocities to the world</h2><br>
+                <p>In 1940, Witold Pilecki infiltrated the camp and began smuggling out reports of what was happening inside, at the same time inspiring an underground resistance movement from within.</p><br>
+                <span class="last">8 hrs ago<hr class="rotate"> Travel</span><br><br>
+                <hr> 
+            </div>
+        
+            <div>
+                <img src="image/5.png" alt=""><br><br>
+                <h2>What Trump has done since taking power</h2><br>
+                <p>The Republican has started his second term at a fast pace. Here's a handy guide to what he's done so far.</p><br>
+                <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                <hr>
+            </div>
+        </div>
+</section><br><br><br>
+
+<section class="sec2">
+    <div class="backgroud">
+        <br>
+        <hr class="hor">
+        <h2 >Arts in Motion    &#10095</h2><br><br>
+        <div class="conta1">
+          <div><img src="image/product (20).jpg" alt=""></div>
+          <div><img src="image/product (20).jpg" alt=""></div>
+          <div class="black"><h1>Inside the studio of Britain's most celebrated sculptor</h1><br>
+        <p>
+            The BBC visits the studio of British sculptor Antony Gormley to learn how art evolves as a communal practice.</p>
+                <br>       
+            <button class="but">See more</button></div>
+        </div><br><br>
+    </div>
+</section><br><br><br><br>
+
+<section class="sec1">
+    <div class="flo">
+        <hr class="hord"> <br>
+        <h2>More news   &#10095</h2><br>
+        <div class="float">
+         <div><h4>Bank of Japan raises rates to highest in 17 years</h4>  <span class="last">14 hrs ago<hr class="rotate"> Business</span><br><br></div>
+         <div><h4>Captain Cook statue vandalised ahead of Australia Day</h4>  <span class="last">18 hrs ago<hr class="rotate"> Australia</span><br><br></div>
+         <div><h4>Afghan refugees feel 'betrayed' by Trump order blocking move to US</h4>  <span class="last">21 hrs ago<hr class="rotate">   Asia</span><br><br></div>
+         <div><h4><span class="live">LIVE</span> Man dies as Storm Éowyn batters UK and Ireland leaving one million without power</h4></div>
+         <div><h4>Watch: Storm Éowyn brings wild weather to UK and Ireland</h4>  <span class="last">8 hrs ago<hr class="rotate">   Europe</span><br><br></div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <section class="sec2">
+        <div class="backgroud1">
+            <br>
+            <hr class="hor">
+            <div class="icon">
+            <h2 >Must watch   &#10095</h2><br>
+            <div class="ico">
+            <a class="prev" onclick="scrollt()">&#10094</a>
+            <a class="next" onclick="scrollr(1)">&#10095</a>
+            </div>
+            </div>
+            <div class="slideshow-container">
+            <div class="display">
+                <div class="mySlides"><video src="https://www.bbc.com/news/videos/cy0pw3g02p8o" ></video><span class="playb"></span><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                    <hr class="hr"></div>
+                <div class="mySlides"><video src=""></video><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                        <hr class="hr"></div>
+                <div class="mySlides"><video src=""></video><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                            <hr class="hr"></div>
+                <div class="mySlides"><video src=""></video><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                                <hr class="hr"></div> 
+                <div class="mySlides"><video src=""></video><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                                    <hr class="hr"></div> 
+                <div class="mySlides"><video src=""></video><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                                        <hr class="hr"></div>
+                <div class="mySlides"><video src=""></video><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                                            <hr class="hr"></div>  
+                <div class="mySlides"><video src=""></video><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                                                <hr class="hr"></div>                        
+            </div>
+            </div>
+           
+        </div>
+    </section>
+</section><br><br><br><br>
+
+
+<section class="sec1">
+    <div class="flo">
+        <hr class="hord"> <br>
+        <h2>Culture   &#10095</h2><br>
+        <div class="float5">
+           <div><img src="image/6.png" alt=""></div>
+           <div class="fixed"><h1>From The Apprentice to Wicked, the 2025 Oscar nominations are the most political ever</h1><br><p>
+            The films nominated this year take on contentious topics with ferocious energy.</p><br><button class="but1">See more</button></div>
+        </div>
+    </div>
+</section><br><br>
+
+<section class="sec1">
+    <div class="flo">
+        <hr class="hord"> <br>
+        <h2>Health and wellness</h2><br>
+        <div class="float5">
+           <div class="fixed"><h1>'Grief apps' are turning death into data</h1><br><p>People are turning to 'grief apps' to cope with the loss of family and friends. But the new world of death data raises troubling questions.
+
+           </p><br><button class="but1">See more</button></div>
+            <div><img src="image/6.png" alt=""></div>
+        </div>
+    </div>
+</section><br><br>
+
+<section class="sec1">
+    <div class="plane">
+        <div><h3>The truth about eating eggs</h3><br>  <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br></div>
+        <div><h3>The truth about eating eggs</h3><br>  <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br></div>
+        <div><h3>The truth about eating eggs</h3><br>  <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br></div>
+    </div>
+</section><br><br>
+
+<section>
+    <section class="sec2">
+        <div class="backgroud1">
+            <br>
+            <hr class="hor">
+            <div class="icon">
+            <h2 >Must watch   &#10095</h2><br>
+            <div class="ico">
+            <a class="prev" onclick="scrolltop1()">&#10094</a>
+            <a class="next" onclick="scrollrr2(1)">&#10095</a>
+            </div>
+            </div>
+            <div class="slideshow-container1">
+            <div class="display">
+                <div class="mySlides"><video src="https://www.bbc.com/news/videos/cy0pw3g02p8o" ></video><span class="playb"></span><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                    <hr class="hr"></div>
+                <div class="mySlides"><video src=""></video><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                        <hr class="hr"></div>
+                <div class="mySlides"><video src=""></video><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                            <hr class="hr"></div>
+                <div class="mySlides"><video src=""></video><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                                <hr class="hr"></div> 
+                <div class="mySlides"><video src=""></video><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                                    <hr class="hr"></div> 
+                <div class="mySlides"><video src=""></video><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                                        <hr class="hr"></div>
+                <div class="mySlides"><video src=""></video><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                                            <hr class="hr"></div>  
+                <div class="mySlides"><video src=""></video><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                                                <hr class="hr"></div>                        
+            </div>
+            </div>
+           
+        </div>
+    </section>
+</section><br><br><br><br>
+
+<section class="sec1">
+    <div class="try">
+        <div><hr class="hord"><br><h1>
+            US & Canada news   &#10095</h1><br><br><div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                <hr></div><br><br>
+                <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                    <hr></div><br><br>
+                    <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                        <hr></div><br><br>
+                        <img src="image/7.png" alt="" width="300px" height="200px"><br>
+                        <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                        <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p>
+                        <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr>
+        </div>
+
+
+        <div><hr class="hord"><br><h1>
+            US & Canada news   &#10095</h1><br><br><div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                <hr></div><br><br>
+                <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                    <hr></div><br><br>
+                    <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                        <hr></div><br><br>
+                        <img src="image/8.png" alt="" width="300px" height="200px"><br>
+                        <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                        <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p>
+                        <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr>
+        </div>
+
+
+        <div><hr class="hord"><br><h1>
+            US & Canada news   &#10095</h1><br><br><div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                <hr></div><br><br>
+                <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                    <hr></div><br><br>
+                    <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                        <hr></div><br><br>
+                        <img src="image/9.png" alt="" width="300px" height="200px"><br>
+                        <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                        <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p>
+                        <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr>
+        </div>
+
+
+        <div><hr class="hord"><br><h1>
+            US & Canada news   &#10095</h1><br><br><div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                <hr></div><br><br>
+                <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                    <hr></div><br><br>
+                    <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                        <hr></div><br><br>
+                        <img src="image/10.png" alt="" width="300px" height="200px"><br>
+                        <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                        <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p>
+                        <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr>
+        </div>
+
+      
+    </div>
+</section><br><br>
+
+
+
+<section class="sec2">
+    <div class="backgroud">
+        <br>
+        <hr class="hor">
+        <h2 >Video   &#10095</h2><br><br>
+        <div class="conta1">
+          <div><video src="" width="150%" height="100%"></video></div>
+          
+          <div class="black1"><h1>Why being a 'loner' could be good for you</h1><br>
+        <p>
+            
+Emerging research suggests that spending time alone is beneficial for our health and creativity.
+
+</p>
+                <br>       
+            <button class="but">See more</button></div>
+        </div><br><br>
+    </div>
+</section><br><br><br><br>
+
+<section class="sec1">
+    <div class="try">
+        <div><hr class="hord"><br><h1>
+            US & Canada news   &#10095</h1><br><br><div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                <hr></div><br><br>
+                <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                    <hr></div><br><br>
+                    <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                        <hr></div><br><br>
+                        <img src="image/7.png" alt="" width="300px" height="200px"><br>
+                        <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                        <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p>
+                        <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr>
+        </div>
+
+
+        <div><hr class="hord"><br><h1>
+            US & Canada news   &#10095</h1><br><br><div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                <hr></div><br><br>
+                <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                    <hr></div><br><br>
+                    <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                        <hr></div><br><br>
+                        <img src="image/8.png" alt="" width="300px" height="200px"><br>
+                        <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                        <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p>
+                        <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr>
+        </div>
+
+
+        <div><hr class="hord"><br><h1>
+            US & Canada news   &#10095</h1><br><br><div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                <hr></div><br><br>
+                <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                    <hr></div><br><br>
+                    <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                        <hr></div><br><br>
+                        <img src="image/9.png" alt="" width="300px" height="200px"><br>
+                        <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                        <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p>
+                        <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr>
+        </div>
+
+
+        <div><hr class="hord"><br><h1>
+            US & Canada news   &#10095</h1><br><br><div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                <hr></div><br><br>
+                <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                    <hr></div><br><br>
+                    <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                        <hr></div><br><br>
+                        <img src="image/10.png" alt="" width="300px" height="200px"><br>
+                        <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                        <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p>
+                        <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr>
+        </div>
+
+      
+    </div>
+</section><br><br>
+
+
+<section class="sec1">
+    <div class="try">
+        <div><hr class="hord"><br><h1>
+            US & Canada news   &#10095</h1><br><br><div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                <hr></div><br><br>
+                <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                    <hr></div><br><br>
+                    <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                        <hr></div><br><br>
+                        <img src="image/7.png" alt="" width="300px" height="200px"><br>
+                        <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                        <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p>
+                        <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr>
+        </div>
+
+
+        <div><hr class="hord"><br><h1>
+            US & Canada news   &#10095</h1><br><br><div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                <hr></div><br><br>
+                <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                    <hr></div><br><br>
+                    <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                        <hr></div><br><br>
+                        <img src="image/8.png" alt="" width="300px" height="200px"><br>
+                        <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                        <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p>
+                        <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr>
+        </div>
+
+
+        <div><hr class="hord"><br><h1>
+            US & Canada news   &#10095</h1><br><br><div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                <hr></div><br><br>
+                <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                    <hr></div><br><br>
+                    <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                        <hr></div><br><br>
+                        <img src="image/9.png" alt="" width="300px" height="200px"><br>
+                        <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                        <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p>
+                        <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr>
+        </div>
+
+
+        <div><hr class="hord"><br><h1>
+            US & Canada news  &#10095</h1><br><br><div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                <hr></div><br><br>
+                <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                    <hr></div><br><br>
+                    <div><h4>New fires erupt in southern California ahead of Trump visit</h4><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                        <hr></div><br><br>
+                        <img src="image/10.png" alt="" width="300px" height="200px"><br>
+                        <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                        <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p>
+                        <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr>
+        </div>
+
+      
+    </div>
+</section><br><br>
+</div>
+
+
+
+<div   id="Bussiness" class="tabcontent">
+    <div class="bus-cont">
+        <hr>
+        <div class="bus-header">
+            <a>Executive Lounge</a>
+            <a>Technology of Business</a>
+            <a>Future of Business</a>
+        </div>
+        <hr>
+        <section class="bus-sec">
+          <div bus-box1>
+            <div class="bus-bus1">
+                <div class="fff">
+                <h1>US doesnot need Canadain energy or cars, says Trump</h1><br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa at repudiandae dolore ducimus distinctio dolores ad ipsam placeat iure maiores. Incidunt excepturi nulla quod laborum, autem perspiciatis nobis atque laboriosam.</p><br>
+                <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr>
+                </div>
+                <div><img class="bus-ss" src="image/1.png" alt="" width='500px' height="400px"></div>
+                 <div><img src="image/2.png" alt="" width="300px" height="200px">
+                <h2>US government workers told report DEI efforts or face 'consequences</h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus laborum id, officia dolorem impedit esse cumque placeat exercitationem eos nostrum quo eaque recusandae dolor, obcaecati voluptates quia, nobis similique deleniti!</p><br>
+                <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr><br></div>
+            </div><br><br>
+           <div class="bus-bus2">
+            <div><img src="image/11.png" alt="" width="300px" height="200px">
+                <h2>US government workers told report DEI efforts or face 'consequences</h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus laborum id, officia dolorem impedit esse cumque placeat exercitationem eos nostrum quo eaque recusandae dolor, obcaecati voluptates quia, nobis similique deleniti!</p><br>
+                <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr><br>
+            </div>
+
+            <div><img src="image/12.png" alt="" width="300px" height="200px">
+                <h2>US government workers told report DEI efforts or face 'consequences</h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus laborum id, officia dolorem impedit esse cumque placeat exercitationem eos nostrum quo eaque recusandae dolor, obcaecati voluptates quia, nobis similique deleniti!</p><br>
+                <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr><br>
+            </div>
+                    
+            <div><img src="image/14.png" alt="" width="300px" height="200px">
+                <h2>US government workers told report DEI efforts or face 'consequences</h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus laborum id, officia dolorem impedit esse cumque placeat exercitationem eos nostrum quo eaque recusandae dolor, obcaecati voluptates quia, nobis similique deleniti!</p><br>
+                <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr><br>
+            </div>
+                        
+            <div><img src="image/15.png" alt="" width="300px" height="200px">
+                <h2>US government workers told report DEI efforts or face 'consequences</h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus laborum id, officia dolorem impedit esse cumque placeat exercitationem eos nostrum quo eaque recusandae dolor, obcaecati voluptates quia, nobis similique deleniti!</p><br>
+                <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr><br>
+            </div>
+           </div><br><br>
+           
+           <div class="bus-bus2">
+               <div><h2>US government workers told report DEI efforts or face 'consequences</h2><br>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus laborum id, officia dolorem impedit esse cumque placeat exercitationem eos nostrum quo eaque recusandae dolor, obcaecati voluptates quia, nobis similique deleniti!</p><br>
+                  <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr><br>
+                </div>
+                
+                <div><h2>US government workers told report DEI efforts or face 'consequences</h2><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus laborum id, officia dolorem impedit esse cumque placeat exercitationem eos nostrum quo eaque recusandae dolor, obcaecati voluptates quia, nobis similique deleniti!</p><br>
+                     <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr><br>
+                   </div>
+           </div>
+            
+          </div>
+        </section>
+    </div><br><br>
+        <section class="bus-sec">
+        <hr height="3px" color="black">
+    <h1> Analysis</h1>
+    
+        <div class="left1">
+            <div>
+                <img src="image/4.png" alt=""><br><br>
+                <h2>The man who revealed Auschwitz's atrocities to the world</h2><br>
+                <p>In 1940, Witold Pilecki infiltrated the camp and began smuggling out reports of what was happening inside, at the same time inspiring an underground resistance movement from within.</p><br>
+                <span class="last">8 hrs ago<hr class="rotate"> Travel</span><br><br>
+                <hr> 
+            </div>
+        
+            <div>
+                <img src="image/5.png" alt=""><br><br>
+                <h2>What Trump has done since taking power</h2><br>
+                <p>The Republican has started his second term at a fast pace. Here's a handy guide to what he's done so far.</p><br>
+                <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                <hr>
+            </div>
+        </div>
+    </section><br><br>
+
+    <section class="bus-100">
+        <div class="backgroud">
+            <br>
+            <hr class="hor">
+            <h2 >Arts in Motion    &#10095</h2><br><br>
+            <div class="conta1">
+              <div><img src="image/20.png" alt="" width="500px"></div>
+              <div class="black"><h1>Inside the studio of Britain's most celebrated sculptor</h1><br>
+            <p>
+                The BBC visits the studio of British sculptor Antony Gormley to learn how art evolves as a communal practice.</p>
+                    <br>       
+                <button class="but">See more</button></div>
+            </div><br><br>
+        </div>
+    </section><br><br>
+
+
+    <section class="sec1">
+        <div class="flo">
+            <hr class="hord"> <br>
+            <h2>Great listen</h2><br>
+            <div class="float5">
+               <div class="fixed"><h1>Good Bad Billionaire</h1><br><p>People are turning to 'grief apps' to cope with the loss of family and friends. But the new world of death data raises troubling questions.
+    
+               </p><br><button class="but1">See more</button></div>
+                <div><img src="image/img2.png" alt=""></div>
+            </div>
+        </div>
+    </section><br><br>
+
+    <section class="sec1">
+        <div class="flo">
+            <br>
+            <hr class="hord"> <br>
+            <h2>Executive   &#10095</h2><br>
+            <div class="float5">
+               <div><img src="image/img1.png" alt=""></div>
+               <div class="fixed"><h1>How one product made a multi-million dollar brand</h1><br><p>
+                The films nominated this year take on contentious topics with ferocious energy.</p><br><button class="but1">See more</button></div>
+            </div>
+        </div>
+    </section><br><br>
+
+    <section class="sec1">
+        <br>
+        <hr class="hord"><br>
+        <h2 >More news   &#10095</h2><br><br>
+        <div class="try">
+          
+            <div>
+                <img src="image/21.png" alt="" width="300px" height="200px"><br>
+                <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p>
+                <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr>
+            </div>
+     
+            <div>
+                <img src="image/22.png" alt="" width="300px" height="200px"><br>
+                <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p>
+                <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr>
+            </div>
+
+            <div>
+                <img src="image/23.png" alt="" width="300px" height="200px"><br>
+                <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p>
+                <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr>
+            </div>
+
+        </div>
+    </section><br><br>
+    
+
+    <section class="sec1">
+       
+        <div class="try">
+          
+            <div>
+                <img src="image/24.png" alt="" width="300px" height="200px"><br>
+                <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p>
+                <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr>
+            </div>
+     
+            <div>
+                <img src="image/25.png" alt="" width="300px" height="200px"><br>
+                <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p>
+                <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr>
+            </div>
+
+            <div>
+                <img src="image/26.png" alt="" width="300px" height="200px"><br>
+                <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p>
+                <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr>
+            </div>
+
+        </div>
+    </section><br><br>
+
+    <section>
+        <section class="sec2">
+            <div class="backgroud1">
+                <br>
+                <hr class="hor">
+                <div class="icon">
+                <h2 >Must watch   &#10095</h2><br>
+                <div class="ico">
+                <a class="prev" onclick="scrollto()">&#10094</a>
+                <a class="next" onclick="scrollro(1)">&#10095</a>
+                </div>
+                </div>
+                <div class="slideshow-containerr">
+                <div class="display">
+                    <div class="mySlides"><video src="https://www.bbc.com/news/videos/cy0pw3g02p8o" ></video><span class="playb"></span><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                        <hr class="hr"></div>
+                    <div class="mySlides"><video src=""></video><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                            <hr class="hr"></div>
+                    <div class="mySlides"><video src=""></video><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                                <hr class="hr"></div>
+                    <div class="mySlides"><video src=""></video><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                                    <hr class="hr"></div> 
+                    <div class="mySlides"><video src=""></video><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                                        <hr class="hr"></div> 
+                    <div class="mySlides"><video src=""></video><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                                            <hr class="hr"></div>
+                    <div class="mySlides"><video src=""></video><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                                                <hr class="hr"></div>  
+                    <div class="mySlides"><video src=""></video><br><h3>Drone footage shows Canadian cargo ship trapped in ice</h3><br><p>The ship became stuck on Lake Erie while departing Buffalo, New York on 22 January.</p><br> <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br>
+                                                    <hr class="hr"></div>                        
+                </div>
+                </div>
+               
+            </div>
+        </section>
+    </section><br><br><br><br>
+
+
+    <section class="sec2">
+        <br>
+        <hr class="hord"><br>
+        <h2 >More in Bussiness   &#10095</h2><br><br>
+        <div>
+             <div class="wow">
+                 <div><p>2 days</p></div>
+                 <div> <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                     <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p><br><br><br>
+                     <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr></div>
+                     <div><img src="image/7.png" alt="" width="200px" height="150px"></div>
+             </div><br><br>
+
+             <div class="wow">
+                <div><p>2 days</p></div>
+                <div> <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                    <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p><br><br><br>
+                    <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr></div>
+                    <div><img src="image/8.png" alt="" width="200px" height="150px"></div>
+            </div><br><br>
+
+            <div class="wow">
+                <div><p>2 days</p></div>
+                <div> <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                    <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p><br><br><br>
+                    <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr></div>
+                    <div><img src="image/9.png" alt="" width="200px" height="150px"></div>
+            </div><br><br>
+
+            <div class="wow">
+                <div><p>2 days</p></div>
+                <div> <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                    <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p><br><br><br>
+                    <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr></div>
+                    <div><img src="image/10.png" alt="" width="200px" height="150px"></div>
+            </div><br><br>
+
+            <div class="wow">
+                <div><p>2 days</p></div>
+                <div> <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                    <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p><br><br><br>
+                    <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr></div>
+                    <div><img src="image/24.png" alt="" width="200px" height="150px"></div>
+            </div><br><br>
+
+            <div class="wow">
+                <div><p>2 days</p></div>
+                <div> <h3>Even before the LA fires, Californians fled for 'climate havens'</h3><br>
+                    <p>Some are moving to so-called "climate havens" in the Great Lakes region to avoid climate disasters.</p><br><br><br>
+                    <span class="last">9 hrs ago<hr class="rotate">US & Canada</span><br><br><hr></div>
+                    <div><img src="image/25.png" alt="" width="200px" height="150px"></div>
+            </div><br><br>
+        </div>
+
+        <div class="wow1">
+            <div><button> &#10094</button></div>
+            <div><button>1</button></div>
+            <div><button>2</button></div>
+            <div><button>3</button></div>
+            <div><button>4</button></div>
+            <div><button> &#10095</button></div>
+        </div>
+    </section><br><br><br>
+
+  
+        </div>
+   
+</div>
+
+<hr>
+<footer>
+    <section class="footer">
+        <div class="fooimg"><img src="image/bbc logo.jpg" alt=""></div><br>
+        <div class="foolink"> <a    class="active" href="home">Home</a>
+            <a href="news">News</a>
+            <a href="Sport">Sport</a>
+            <a href="Bussiness">Bussiness</a>
+            <a href="Inovation">Inovation</a>
+            <a href="Culture">Culture</a>
+            <a href="Arts">Arts</a>
+            <a href="Travle">Travle</a>
+            <a href="Earth">Earth</a>
+            <a href="Video">Video</a>
+            <a hr:;ef="Live">live</a></div><br>
+           <div><button class="foosel" >
+            BBC in other languages   <span  onclick="upp()" class="up">&#10096</span><span onclick="downn()" class="down">&#10094</span></button></div><br>
+            <div class="lang" ><div>     <pre> 
+                           Oduu Afaan Oromootiin
+                           Amharic ዜና በአማርኛ
+                           Arabic عربي
+                           Azeri AZƏRBAYCAN
+                           Bangla বাংলা
+                           Burmese မြန်မာ
+                           Chinese 中文网
+                           French AFRIQUE
+                           Hausa HAUSA 
+                           Hindi हिन्दी
+                           Gaelic NAIDHEACHDAN
+                           Oduu Afaan Oromootiin
+                           Amharic ዜና በአማርኛ
+                           Arabic عربي
+                           Azeri AZƏRBAYCAN
+                           Bangla বাংলা
+                           Burmese မြန်မာ
+                           Chinese 中文网
+                           French AFRIQUE
+                           Hausa HAUSA 
+                           Hindi हिन्दी
+                           Gaelic NAIDHEACHDAN</pre></div>
+                        <div>     <pre> 
+                           Oduu Afaan Oromootiin
+                           Amharic ዜና በአማርኛ
+                           Arabic عربي
+                           Azeri AZƏRBAYCAN
+                           Bangla বাংলা
+                           Burmese မြန်မာ
+                           Chinese 中文网
+                           French AFRIQUE
+                           Hausa HAUSA 
+                           Hindi हिन्दी
+                           Gaelic NAIDHEACHDAN
+                           Oduu Afaan Oromootiin
+                           Amharic ዜና በአማርኛ
+                           Arabic عربي
+                           Azeri AZƏRBAYCAN
+                           Bangla বাংলা
+                           Burmese မြန်မာ
+                           Chinese 中文网
+                           French AFRIQUE
+                           Hausa HAUSA 
+                           Hindi हिन्दी
+                           Gaelic NAIDHEACHDAN</pre></div>
+                        <div>     <pre> 
+                           Oduu Afaan Oromootiin
+                           Amharic ዜና በአማርኛ
+                           Arabic عربي
+                           Azeri AZƏRBAYCAN
+                           Bangla বাংলা
+                           Burmese မြန်မာ
+                           Chinese 中文网
+                           French AFRIQUE
+                           Hausa HAUSA 
+                           Hindi हिन्दी
+                           Gaelic NAIDHEACHDAN
+                           Oduu Afaan Oromootiin
+                           Amharic ዜና በአማርኛ
+                           Arabic عربي
+                           Azeri AZƏRBAYCAN
+                           Bangla বাংলা
+                           Burmese မြန်မာ
+                           Chinese 中文网
+                           French AFRIQUE
+                           Hausa HAUSA 
+                           Hindi हिन्दी
+                           Gaelic NAIDHEACHDAN</pre></div></div><br>
+    <hr>
+    <br><br>
+    <section class="footer">
+        <div class="iicon-cont">
+        <div class="iicon1"><h2>Fllow on :</h2></div>
+        <div class="iicon">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a> </div>
+        </div><br>
+    
+        <div class="ppp">
+          <p>Terms of Use</p>
+          <p>About the BBC</p>
+          <p>Privacy Policy</p>
+          <p>Cookies</p>
+          <p>Accessibility Help</p>
+          <p>Contact the BBC</p>
+          <p>Advertise with us</p>
+          <p>Do not share or sell my info</p>
+          <p>Contact technical support</p>
+        </div><br>
+    
+        <p class="last8">Copyright 2025 BBC. All rights reserved.  The BBC is not responsible for the content of external sites. <span class="span"> Read about our approach to external linking.</span></p>
+    </section>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="tab.js"></script>
+    <script src="lang.js"></script>
+    <script src="line.js"></script>
+    <script src="preloader.js"></script>
+
+
+
+</body>
+</html>
